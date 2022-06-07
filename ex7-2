@@ -17,3 +17,66 @@ int addNumbers(int a, int b)         // function definition
     result = a+b;
     return result;                     
     //return statement
+    
+    **
+    
+    #include <stdio.h>
+int addNumbers(int a, int b); // function prototype
+
+
+ #if 0
+int main()
+{
+    int n1,n2,sum;
+    printf("Enters two numbers: ");
+    scanf("%d",&n1);
+    scanf("%d",&n2);
+    sum = addNumbers(n1, n2);  // function call
+    printf("sum = %d",sum);
+    
+    scanf("%d",&n1);
+    scanf("%d",&n2);
+    sum = subNumbers(n1, n2);  // function call
+    printf("sub = %d",sum);
+    
+    return 0;
+}
+
+int addNumbers(int a, int b)         // function definition   
+{
+    int result;
+    result = a+b;
+    return result;                     
+    return statement
+}
+
+
+int subNumbers(int a, int b)         // function definition   
+{
+    int result;
+    result = (a-b);
+    return result;                     
+    return statement
+}
+    
+ return 0;
+ #endif
+
+ 
+ 
+ #include <stdio.h>
+int main() {    
+
+    int number1, number2, sum;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d", &number1, &number2);
+
+    // calculating sum
+    sum = number1 + number2;
+    cout << &number1 + &number2
+    
+    //cout << "sum+" number1 + number2;
+    return 0;
+}
+
