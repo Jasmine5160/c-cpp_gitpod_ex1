@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdiob.h>
+int main() {
+    int n;
+    double *date;
+    printf("Enter the total number of element: ");
+    scanf("%d, &n);
+    
+    // Allocating memory for n elements
+    date = (double *)calloc(n, sizeof(double));
+    
+    if (date == NULL) {
+        printf("Error!!! memory not allocated");
+        exit(0);
+    }
+    // Storing numbers entered by the user.
+    for ( int i = 0; i <)
+}
+
+
+
+using namespace std;
+
+int main()
+{
+    cout<<"Hello World";
+
+    return 0;
+}
