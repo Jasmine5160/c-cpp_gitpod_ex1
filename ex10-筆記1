@@ -1,0 +1,17 @@
+#include <stdio.h>//不知道錯哪裡
+#include <string.h>
+int main()
+{
+
+//int* Pointer
+
+    char color [] = "blue";// “blue” 表字串  []-填入  char 字串名稱[字串長度] ＝ “blue”;
+
+    char color [] = {'b', 'l', 'u', 'e', '\0'}; 
+
+const char *colorptr="blue"; 
+
+char *c = &color[0];
+
+    return 0;
+}
