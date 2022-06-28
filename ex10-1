@@ -1,0 +1,32 @@
+#include <stdio.h>
+typedef struct Distance{
+    int m;
+    float cm;//古典運算
+} distance;
+distance add(distance d1,distance d2 ){
+    distance dd;//--宣告(下面改寫)
+    int temp;//暫時變數
+    dd.cm = d1.cm +d2.cm;
+    if(dd.cm > 100){//解釋
+       //temp  = dd.cm % 100;//餘數 temp整數的方式 ftemp 古典
+       dd.m  = dd.cm / 100;
+       temp  = dd.cm - (dd.m *100.0f); //.0f 表float類型
+       dd.cm = temp;
+    }
+    dd.m = dd.m +d1.m +d2.m;
+    
+    return dd;
+}
+int main() {
+    distance     d1, d2;
+    distance*    p_d;//p_d 表printf
+    d1.m  = 1;
+    d1.cm = 78.5;
+    d2.m  =1;
+    d2.cm =77.5;
+    p_d   = &d1;
+    d1 =add(*p_d,d2);//*表值
+    printf("your height = %d m %f cm \n",p_d->m,p_d->cm);
+    printf("Hello World");
+    return 0;
+}
