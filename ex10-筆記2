@@ -1,0 +1,24 @@
+#include <stdio.h>//練習-紀錄學號、學生資料
+struct student {
+    char name[100];
+    int roll;
+    float marks;
+} s;
+
+int main() {
+    printf("Enter information:\n");
+    printf("Enter name: ");
+    fgets(s.name, sizeof(s.name), stdin);
+
+    printf("Enter roll number: ");
+    scanf("%d", &s.roll); //&s=防止數據被隨意篡改。
+    printf("Enter marks: ");
+    scanf("%f", &s.marks);// %f=浮點數輸出=小數點後面的數字
+
+    printf("Displaying Information:\n");
+    printf("Name: ");
+    printf("%s", s.name);// %s=字串輸出
+    printf("Roll number: %d\n", s.roll);
+    printf("Marks: %.1f\n", s.marks);// %.1f=有取小數點後一位
+
+    return 0;
