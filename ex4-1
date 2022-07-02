@@ -1,0 +1,25 @@
+#include <iostream>//未改完，x y 數字無法顯現
+#include <stdio.h>
+using namespace std;
+int main(){
+   int x;
+   int y;// int = 宣告
+   int bool_value;
+   
+   printf("please input x:\n");// \\ \n 使句子換行 
+   scanf("%d",&x);// %d =一個整數
+   printf("please input y:\n");
+    scanf("%d",&y);
+    
+    bool_value = (x > y);
+    printf(" x > y ==> %d \n",bool_value);
+    bool_value = (x < y);
+    printf(" x > y ==> %d \n",bool_value);
+    bool_value = ( x < 5 && x < 10);//&&表 且的意思
+    printf(" x < 5 &&  x < 10 ==> %d |\n",bool_value);
+    cout<<("Hello World");
+
+    return 0;
+}
+
+    
