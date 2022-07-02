@@ -14,11 +14,10 @@ int main(){
     printf("Length of the stringd n=  %d \n", n);
     ss = s;
     for (i = 0; i < n_i ; ++i){
-        //printf("%c,*s[i]"); //問老師這串要怎麼寫 %c=字元方式輸出
+        //printf("%c,*s[i]"); //問老師這串要怎麼寫 %c=輸出字符  
         printf("%c",*(ss+i));
     } 
     printf("\n");
 //把sizeof放入
     return 0;
 }
-
