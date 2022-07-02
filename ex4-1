@@ -1,5 +1,5 @@
 #include <iostream>//未改完，x y 數字無法顯現
-#include <stdio.h>
+#include <stdio.h>//看到01:13 看老師講義下的影片
 using namespace std;
 int main(){
    int x;
