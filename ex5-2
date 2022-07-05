@@ -2,18 +2,20 @@
 using namespace std;
 int main()
 {
-    int i, z;
+ 
+   int i, x;
     
     for( i=1 ; i<=9 ; i=i+1 ){
         
-		for( z=1 ; z<=9 ; z=z+1 ){
-		    
-            cout << i << "*" << z << "=" << i*z << " ";
+		for( x=1 ; x<=9 ; x=x+1 ){
+            cout << i << "*" << x << "=" << i*x << " ";
+            
+            printf(" \n");
+            
 		}
+    }
 		
-		cout << endl;
-		
-     }   
-    
+		cout << "Hello World" <<endl;
     return 0;
 }
+    
