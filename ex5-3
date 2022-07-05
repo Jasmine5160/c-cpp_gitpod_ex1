@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int n;
+char '*';
+cin >> n;
+//char 
+//for(initialization;  condition ;  inc/dec)
+          //statement;
+          
+	for( int n=1; n<=10 ;n++)
+		cout << n << '*' ;
+		printf(" \n");
+     
+    cout<<"Hello world";
+    
+    return 0;
+}
